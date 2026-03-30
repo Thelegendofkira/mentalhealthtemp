@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function DashboardPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Page Header */}
+
       <div className="mb-10">
         <h1 className="text-3xl font-bold text-slate-900 tracking-tight">
           Understanding Mental Health
@@ -20,16 +20,16 @@ export default function DashboardPage() {
         </p>
       </div>
 
-      {/* ── Video Embed Placeholder ── */}
+
       <section className="mb-12">
         <h2 className="text-lg font-semibold text-slate-700 mb-4">
           Featured Video
         </h2>
         <div className="relative w-full rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100">
-          {/* 16:9 Aspect Ratio */}
+
           <div style={{ paddingTop: "56.25%" }} className="relative">
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-slate-400">
-              {/* Inline SVG play icon */}
+
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="48"
