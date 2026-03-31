@@ -53,6 +53,9 @@ export async function POST(request: Request) {
         });
 
         // 5. Parse the JSON response
+        if (!response.text) {
+            throw new Error("Received empty response from Gemini");
+        }
         const parsedData = JSON.parse(response.text);
 
         // 6. Return the updated state to the frontend

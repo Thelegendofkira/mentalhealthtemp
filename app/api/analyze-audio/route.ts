@@ -45,6 +45,9 @@ export async function POST(request: Request) {
         });
 
         // 5. Because we forced JSON MIME type, we can parse it directly safely
+        if (!response.text) {
+            throw new Error("Received empty response from Gemini");
+        }
         const parsedData = JSON.parse(response.text);
 
         return NextResponse.json(parsedData);
